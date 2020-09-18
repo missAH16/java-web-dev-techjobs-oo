@@ -39,6 +39,14 @@ public class Employer {
 
     // Getters and Setters:
 
+    public static int getNextId() {
+        return nextId;
+    }
+
+    public static void setNextId(int nextId) {
+        Employer.nextId = nextId;
+    }
+
     public int getId() {
         return id;
     }
