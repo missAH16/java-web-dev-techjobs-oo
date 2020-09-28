@@ -7,14 +7,12 @@ public class CoreCompetency {
     private static int nextId = 1;
     private String value;
 
-    public int getId() {
-        return id;
-    }
 
     public CoreCompetency() {
         this.id = nextId;
         nextId++;
     }
+
 
     public CoreCompetency(String value) {
         this();
@@ -32,14 +30,19 @@ public class CoreCompetency {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof CoreCompetency)) return false;
-        CoreCompetency that = (CoreCompetency) o;
-        return id == that.id;
+        CoreCompetency coreCompetency = (CoreCompetency) o;
+        return getId() == coreCompetency.getId();
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id);
     }
+
+
+    // TODO: Use the "Generate" tool to add a getter and setter for the 'value' field but
+    //  ONLY a getter for the 'id' field.
+    public int getId() { return id; }
 
     public String getValue() {
         return value;
@@ -49,6 +52,5 @@ public class CoreCompetency {
         this.value = value;
     }
 
-    // TODO: Use the "Generate" tool to add a getter and setter for the 'value' field but
-    //  ONLY a getter for the 'id' field.
+
 }
