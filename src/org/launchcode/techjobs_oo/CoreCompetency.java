@@ -17,6 +17,7 @@ public class CoreCompetency extends JobField{
     public CoreCompetency(String value) {
         this();
         this.value = value;
+
     }
 
     // Custom toString, equals, and hashCode methods:
