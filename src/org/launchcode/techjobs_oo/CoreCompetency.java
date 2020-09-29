@@ -15,7 +15,7 @@ public class CoreCompetency extends JobField{
 
 
     public CoreCompetency(String value) {
-        this();
+        super(value);
         this.value = value;
 
     }

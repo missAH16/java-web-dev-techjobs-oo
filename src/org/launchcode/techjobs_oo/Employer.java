@@ -13,7 +13,7 @@ public class Employer extends JobField {
     }
 
     public Employer(String value) {
-        this();
+        super(value);
         this.value = value;
     }
 

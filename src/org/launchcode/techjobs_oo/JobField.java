@@ -12,9 +12,9 @@ public abstract class JobField{
         nextId++;
     }
 
-    public JobField(String aValue) {
+    public JobField(String value) {
         this();
-        this.value = aValue;
+        this.value = value;
     }
 
     @Override
